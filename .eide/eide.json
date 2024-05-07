@@ -1,0 +1,74 @@
+{
+  "name": "projecttest",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps",
+    "ProjectTest"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "857acc973737ee0304b56ff30604bc8f"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "STM32F103VETx_FLASH.ld",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "projecttest.hex",
+        "target": "stm32f1x",
+        "interface": "stlink-v2-1",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".eide/deps",
+          "ProjectTest/Core/Inc",
+          "ProjectTest/Drivers/CMSIS/Include",
+          "ProjectTest/Drivers/STM32F1xx_HAL_Driver/Inc",
+          "ProjectTest/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32F103xE"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
